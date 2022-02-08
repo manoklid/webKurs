@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block body %}
+<div class="indexName">Новости ИМИТ ИГУ</div>
+<div class="newsPanel" id="newsPanel">
+</div>
+
+
+{% block script %}
+  <script>
+   loadNews({{news|safe}});
+  </script>
+{% endblock %}
+{% endblock %}

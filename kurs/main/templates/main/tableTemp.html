@@ -1,0 +1,38 @@
+{% extends 'main/layout.html' %}
+{% block body %}
+<div class="groupTitle">
+  <div class="groupName">{{name}}</div>
+<div class="upperWeek">
+  <input type="radio" id="radio-1"  name="week" value= 1 checked="true">
+  <label for="radio-1">Верхняя неделя</label>
+  </div>
+<div class="bottomWeek">
+  <input type="radio" id="radio-2" name="week" value= 2>
+  <label for="radio-2">Нижняя неделя</label>
+  </div>
+</div>
+
+
+<div id="lessonsTable">
+</div>
+
+{% endblock %}
+{% block script %}
+  <script>
+    $(function () {
+    $('#subject').tooltip();
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+        generateTable({{up|safe}});
+        var data;
+        $("input[name='week']").change(function(){
+        if ($(this).val() === '1'){
+           generateTable({{up|safe}});
+        }
+        else{
+           generateTable({{bot|safe}});
+        }
+});
+    </script>
+{% endblock %}

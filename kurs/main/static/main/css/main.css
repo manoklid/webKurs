@@ -1,0 +1,171 @@
+/*Навигационная панель*/
+aside{
+    float:left;
+    position: relative;
+    background: DodgerBlue;
+    width: 20%;
+    padding: 2%;
+    height :140vh;
+    border-right:5px solid blue;
+
+}
+aside h3{
+    max-width: 100%;
+    word-wrap: break-word;
+}
+aside img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 40%;
+    max-width:  40%;
+}
+aside .sidebarTitle{
+    text-align: center
+    font-size:20px;
+    font-weight:bold;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+a{
+color:black;
+}
+
+select {
+    width: 60%;
+   }
+
+/*Классы таблиц*/
+   .bothWeek{
+   padding:5px;
+   background-color: Cyan;
+   border-radius:10px;
+   margin:3px;
+   outline: 1px solid #000;
+   }
+   .upWeek{
+   padding:5px;
+   background-color: SpringGreen;
+   border-radius:10px;
+   margin:3px;
+   outline: 1px solid #000;
+   }
+   .botWeek{
+   padding:5px;
+   background-color: Orchid;
+   border-radius: 10px;
+   margin:3px;
+   outline: 1px solid #000;
+   }
+    .Table1{
+    margin:auto;
+    width:75%;
+    table-layout: fixed;
+    background-color: white;
+    }
+
+.subject{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+
+.expanded{
+    word-wrap: break-word;
+}
+
+.teacher{
+word-wrap: break-word;
+}
+.classroom{
+word-wrap: break-word;
+}
+
+
+.firstRow{
+text-align: center;
+background-color:Silver;
+}
+
+    td, th {
+    padding:3px;
+    border: 1px solid black;
+    }
+
+    .groupTitle{
+    margin-left: 40%;
+    }
+
+    .groupName{
+     font-weight:bold;
+     font-size:22px;
+     display: inline-block;
+     color:white;
+    }
+/* кнопки переключения верхней и нижней недели*/
+    .upperWeek,.bottomWeek {
+     display: inline-block;
+	 padding:15px;
+}
+.upperWeek input[type=radio],.bottomWeek input[type=radio] {
+	display: none;
+}
+.upperWeek label,.bottomWeek label{
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+	background:white;
+}
+
+.upperWeek input[type=radio]:checked + label{
+	background:SpringGreen;
+}
+
+.bottomWeek input[type=radio]:checked + label{
+ background:Orchid
+}
+
+
+.upperWeek:hover, .bottomWeek :hover{
+	color: #666;
+}
+
+/*классы начальной станицы*/
+.indexName{
+ font-weight:bold;
+ text-align:center;
+ font-size:22px;
+ padding-bottom: 20px;
+ color:white;
+}
+.newsPanel{
+    columns:2;
+    margin:10px;
+    padding-left:10px;
+    column-width: 250px;
+    column-gap: 20px;
+}
+.newsBlock{
+      font-size:10px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      background:SkyBlue;
+      padding: 10px;
+      margin: 0 0 1em 0;
+      border: 2mm solid;
+}
+
+body{
+    background: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+}
+
