@@ -52,3 +52,20 @@ function loadNews(news){
     }
       document.getElementById("newsPanel").innerHTML = html;
 }
+
+function expand(isExpand){
+    var subjects;
+    if(isExpand)
+        subjects = document.getElementsByClassName("subject");
+    else
+        subjects = document.getElementsByClassName("expanded");
+    var data = Array.from(subjects)
+    for (var i = 0; i < data.length; i++) {
+        var element=data[i];
+        if(isExpand){
+            element.classList.replace("subject","expanded");
+        }
+        else
+            element.classList.replace("expanded","subject");
+    }
+}
