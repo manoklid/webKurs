@@ -10,7 +10,7 @@
   <input type="radio" id="radio-2" name="week" value= 2>
   <label for="radio-2">Нижняя неделя</label>
   </div>
-  <div class="bottomWeek">
+  <div class="expand">
   <input type="checkbox" id="expand" name="expand" >
   <label for="expand">Развернуть</label>
   </div>
@@ -23,14 +23,13 @@
 {% endblock %}
 {% block script %}
   <script>
+    <!--подсвечивание полного названия при наведении на предмет-->
     $(function () {
     $('#subject').tooltip();
       $('[data-toggle="tooltip"]').tooltip();
     });
-
-
+     <!--начальное создание таблицы при загрузке страницы-->
      generateTable({{up|safe}});
-     var data;
 
      <!--выбор верхней/нижней недели-->
      $("input[name='week']").change(function(){
@@ -42,7 +41,6 @@
         }
         expand($("input[name='expand']").is(':checked'))
      });
-
 
    <!--кнопка отображения полного названия предмета-->
     $("input[name='expand']").change(function(){

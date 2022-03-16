@@ -1,20 +1,8 @@
 from django.contrib import admin
 
-from .models import  news_model
-
-from .models import  group_2342
-from .models import  group_2341
-from .models import  group_2321
-from .models import  group_2322
-from .models import  group_2361
-from .models import  group_2371
-
-from .models import  group_2121M
-from .models import  group_2161M
-from .models import  group_2171M
-from .models import  group_2122M
-from .models import  group_2261M
-
+from .models import  group_2342, group_2341,group_2321,group_2322,group_2361, group_2371, group_2121M,group_2161M, group_2171M,group_2122M,group_2261M,news_model
+#login: admin
+#password: 12345
 admin.site.register(news_model)
 
 admin.site.register(group_2342)

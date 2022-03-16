@@ -5,76 +5,50 @@ from .models import  group_2342, group_2341,group_2321,group_2322,group_2361, gr
 
 
 
+def abstract_group_view(request,group):
+    upper_week = list(group.objects.exclude(week=2).values())
+    bottom_week = list(group.objects.exclude(week=1).values())
+    name = group._meta.db_table
+    return render(request, 'main/tableTemp.html', {'up': upper_week, 'bot': bottom_week, 'name': name})
 
 
 def index(request):
-
     news = list(news_model.objects.values())
     return render(request, 'main/index.html',{'news':news})
 
+
+
 def g2341(request):
-    upper_week = list(group_2341.objects.exclude(week=2).values())
-    bottom_week= list(group_2341.objects.exclude(week=1).values())
-    name=group_2341._meta.db_table
-    return render(request, 'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request,group_2341)
 
 def g2342(request):
-    upper_week = list(group_2342.objects.exclude(week=2).values())
-    bottom_week= list(group_2342.objects.exclude(week=1).values())
-    name = group_2342._meta.db_table
-    return render(request, 'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2342)
 
 def g2321(request):
-    upper_week = list(group_2321.objects.exclude(week=2).values())
-    bottom_week= list(group_2321.objects.exclude(week=1).values())
-    name = group_2321._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2321)
 
 def g2322(request):
-    upper_week = list(group_2322.objects.exclude(week=2).values())
-    bottom_week= list(group_2322.objects.exclude(week=1).values())
-    name = group_2322._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2322)
 
 def g2361(request):
-    upper_week = list(group_2361.objects.exclude(week=2).values())
-    bottom_week= list(group_2361.objects.exclude(week=1).values())
-    name = group_2361._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2361)
 
 def g2371(request):
-    upper_week = list(group_2371.objects.exclude(week=2).values())
-    bottom_week= list(group_2371.objects.exclude(week=1).values())
-    name = group_2371._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
-
+    return abstract_group_view(request, group_2371)
 
 def g2261M(request):
-    upper_week = list(group_2261M.objects.exclude(week=2).values())
-    bottom_week= list(group_2261M.objects.exclude(week=1).values())
-    name = group_2261M._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2261M)
 
+
+#группы без данных в бд
 def g2121M(request):
-    upper_week = list(group_2121M.objects.exclude(week=2).values())
-    bottom_week= list(group_2121M.objects.exclude(week=1).values())
-    name = group_2121M._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2121M)
 
 def g2122M(request):
-    upper_week = list(group_2122M.objects.exclude(week=2).values())
-    bottom_week= list(group_2122M.objects.exclude(week=1).values())
-    name = group_2122M._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2122M)
 
 def g2161M(request):
-    upper_week = list(group_2161M.objects.exclude(week=2).values())
-    bottom_week= list(group_2161M.objects.exclude(week=1).values())
-    name = group_2161M._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2161M)
 
 def g2171M(request):
-    upper_week = list(group_2171M.objects.exclude(week=2).values())
-    bottom_week= list(group_2171M.objects.exclude(week=1).values())
-    name = group_2171M._meta.db_table
-    return render(request,'main/tableTemp.html', {'up': upper_week,'bot':bottom_week,'name':name})
+    return abstract_group_view(request, group_2171M)

@@ -1,15 +1,16 @@
 from django.db import models
 
 class news_model(models.Model):
-    header = models.CharField('Заголовок', max_length=40)
-    text = models.CharField('Текст статьи', max_length=700)
+    header = models.CharField('Заголовок', max_length=100)
+    text = models.CharField('Текст статьи', max_length=7000)
 
     def __str__(self):
         return self.header
 
-    verbose_name = 'Новость'
-    verbose_name_plural = 'Новости'
-    db_table = "Новости"
+    class Meta:
+        verbose_name = 'Новость'
+        verbose_name_plural = 'Новости'
+        db_table = "Новости"
 
 class abstract_group_model(models.Model):
     weekChoise = [
@@ -39,7 +40,7 @@ class abstract_group_model(models.Model):
     time = models.IntegerField('Время', choices=timeChoise)
     teacher = models.CharField('Преподаватель', max_length=70, blank=True, default='')
     classroom = models.CharField('Аудитория', max_length=30, blank=True, default='')
-    name = models.CharField('Название пары', max_length=100)
+    name = models.CharField('Предмет', max_length=100)
 
     def __str__(self):
         return self.name
@@ -47,7 +48,6 @@ class abstract_group_model(models.Model):
     class Meta:
         abstract = True
         ordering = ['time', 'day']
-
 
 class group_2342(abstract_group_model):
     class Meta:

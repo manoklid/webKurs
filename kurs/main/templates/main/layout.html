@@ -17,7 +17,7 @@
 <body>
 <aside>
     <img src="{% static 'main/img/logo_isu.png' %}">
-    <div class="sidebarTitle"><h1>Расписание ИМИТ ИГУ</h1></div>
+    <div class="sidebarTitle"><h1><a href="/">Расписание ИМИТ ИГУ</a></h1></div>
      <h3>Бакалавриат</h3>
         <p><select onchange="window.location.href = this.options[this.selectedIndex].value">
     <optgroup label="3 курс">
@@ -29,16 +29,6 @@
          <option value="5">02361-ДБ</option>
          <option value="6">02371-ДБ</option>
     </optgroup>
-    <!--4 курс без бд-->
-    <optgroup label="4 курс">
-         <option value="20">02411-ДБ</option>
-         <option value="21">02421-ДБ</option>
-         <option value="22">02422-ДБ</option>
-         <option value="23">02441-ДБ</option>
-         <option value="24">02461-ДБ</option>
-         <option value="25">02471-ДБ</option>
-    </optgroup>
-
    </select></p>
      <h3>Магистратура</h3>
         <p><select onchange="window.location.href = this.options[this.selectedIndex].value">
@@ -53,7 +43,6 @@
          <option value="11">02261-ДМ</option>
      </optgroup>
    </select></p>
-    <h3><a href="{% url 'home' %}">Главная страница</a></h3>
 </aside>
 <main>
     {% block body %}

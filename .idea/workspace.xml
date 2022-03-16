@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="125ce391-bc6a-4f97-83e3-c19743daa2e6" name="Default Changelist" comment="init">
+    <list default="true" id="125ce391-bc6a-4f97-83e3-c19743daa2e6" name="Default Changelist" comment="expand option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs/main/static/main/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/static/main/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/main/static/main/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/static/main/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/main/templates/main/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/templates/main/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs/main/templates/main/tableTemp.html" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/templates/main/tableTemp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +55,11 @@
       <recent name="C:\Users\Администратор\Desktop\js для граффики" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Администратор\PycharmProjects\webKurs\kurs\main\static\main\css" />
       <recent name="C:\Users\Администратор\PycharmProjects\web" />
       <recent name="C:\Users\Администратор\PycharmProjects\web\kurs" />
       <recent name="C:\Users\Администратор\PycharmProjects\web\kurs\main\static\main\img" />
       <recent name="C:\Users\Администратор\PycharmProjects\web\kurs\main\templates\main\js" />
-      <recent name="C:\Users\Администратор\PycharmProjects\web\kurs\main\static\main\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644328500216</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="expand option">
+      <created>1644385158251</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1644385158251</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -153,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="background" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="expand option" />
+    <option name="LAST_COMMIT_MESSAGE" value="expand option" />
   </component>
 </project>
